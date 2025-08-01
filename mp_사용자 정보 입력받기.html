@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미니 프로젝트 - 사용자 정보 입력받기</title>
+    <style>
+        #dm{
+            color: aquamarine;
+        }
+        #gi{
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="name"></h1>
+    <p id="dm"></p>
+    <p id="gi"></p>
+
+    <script>
+        const nameElement = document.querySelector("#name")
+        let name = prompt("당신의 이름은?")
+        nameElement.textContent = `저희 이름은 ${name}이라고 합니다.`
+
+        const dmElement = document.querySelector("#dm")
+        let dm = prompt("당신이 가장 좋아하는 동물은??")
+        dmElement.textContent = `제가 가장 좋아하는 동물은 ${dm}입니다!`
+
+        document.querySelector("#gi")
+        .textContent = `좋아하는 과일은 ${prompt("좋아하는 과일은?")}입니다!`
+
+    </script>
+</body>
+</html>

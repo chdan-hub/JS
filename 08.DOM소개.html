@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>불닭볶음면 먹고</p>
+    <p class="comment">설빙 먹고</p>
+    <p class="comment" id="jam">드르렁 드르렁</p>
+
+    <script>
+        const p1 = window.document.querySelector("p")
+        const p2 = window.document.querySelector(".comment")
+        const p3 = window.document.querySelector("#jam")
+
+        console.log(p1.textContent)
+        console.log(p2.textContent)
+        console.log(p3.textContent)
+
+        p1.textContent = "불닭보단 뿌링클"
+        p2.textContent = "설빙보단 베라"
+        p3.textContent = "잠은 계속 잘거야"
+
+    </script>
+</body>
+</html>
